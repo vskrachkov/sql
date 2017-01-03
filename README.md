@@ -23,6 +23,7 @@ docker run --name msql \
     -d mysql 
 ```
 where:
+
 	--name -> docker container name
 	-e MYSQL_ROOT_PASSWORD -> env variable that specify password for database root user
 	-e MYSQL_DATABASE -> env variable that specify the name of database that will be created
@@ -31,5 +32,6 @@ where:
 	-v <host_path>:/docker-entrypoint-initdb.d  -> mounting host dir where initial data stores to container
 	-p <host_port>:<container_port> -> expose container port to host machine
 	-d mysql -> running container from mysql image in daemon mode
+	
 `datadir` folder is in gitignore, so create this directory on the same lavel as `scripts` and `dumps`, all databese files will be stored there.
 Take in mind that if you change parameters with wich run docker containers you need also change them in `config.py`
