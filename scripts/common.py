@@ -30,7 +30,7 @@ def ex(sql, con_name=None, *sql_params):
 		return cur.fetchall()
 
 
-def exl(sql, *sql_params):
+def exl(sql, con_name=None, *sql_params):
 	"""Executes sql expresion and print results in userfriendly form."""
-	for doc in ex(sql, *sql_params):
+	for doc in ex(sql, con_name=con_name, *sql_params):
 	    print(doc)
