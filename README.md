@@ -7,19 +7,19 @@ docker run --name msql \
     -e MYSQL_USER=vs \
     -e MYSQL_PASSWORD=strong_bank \
     -v /Users/vs/Documents/Draft/SQL/dumps:/docker-entrypoint-initdb.d \
+    -v /Users/vs/Documents/Draft/SQL/dumps:/dumps \
     -v /Users/vs/Documents/Draft/SQL/datadir:/var/lib/mysql \
     -p 3306:3306 \
     -d mysql 
 ```
 Running test database:
 ```
-docker run --name msql \
+docker run --name msql_test \
     -e MYSQL_ROOT_PASSWORD=root \
     -e MYSQL_DATABASE=test \
     -e MYSQL_USER=vs \
     -e MYSQL_PASSWORD=strong_test \
-    -v /Users/vs/Documents/Draft/SQL/datadir:/var/lib/mysql \
-    -p 3307:3307 \
+    -p 3307:3306 \
     -d mysql 
 ```
 where:
