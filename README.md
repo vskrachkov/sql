@@ -35,3 +35,7 @@ where:
 	
 `datadir` folder is in gitignore, so create this directory on the same lavel as `scripts` and `dumps`, all databese files will be stored there.
 Take in mind that if you change parameters with wich run docker containers you need also change them in `config.py`
+
+For connecting to container shell:
+  
+    docker exec -it container-name bash
