@@ -11,6 +11,7 @@ from core.common import BaseExercises
 
 
 class Exercises(BaseExercises):
+
     def task31(self):
         """Extracts from the database id, name and family name of
         all bank employees
