@@ -2,7 +2,7 @@
 tasks_3.py
 ==========
 
-The following exercises are designed to consolidate the understanding 
+The following exercises are designed to consolidate the understanding
 of the 'select' expression and its blocks.
 
 """
