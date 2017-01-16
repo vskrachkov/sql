@@ -46,7 +46,7 @@ class Exercises(BaseExercises):
         self.ex("SELECT fname, lname "
                 "FROM individual "
                 "WHERE lname LIKE concat(`\\_`, `a`, `\\%`) AND "
-                "      lname LIKE concat(`\\%`, `le`, `\\%`);")
+                "      lname LIKE concat(`\\%`, `le`, `\\%`)")
 
 
 if __name__ == '__main__':
