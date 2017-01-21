@@ -32,6 +32,16 @@ class Exercises(BaseExercises):
             "GROUP BY cust_id "
             "HAVING accounts_count >= 2")
 
+    def task84(self):
+        """Extracts sum of available balance grouped by product cd for every
+        branch that has more than one account.
+        """
+        self.ex("SELECT product_cd, open_branch_id, sum(avail_balance) "
+                "FROM account "
+                "GROUP BY product_cd, open_branch_id "
+                "HAVING count(*) > 1 "
+                "ORDER BY 3")
+
 
 if __name__ == '__main__':
     e = Exercises(con_name='bank')
