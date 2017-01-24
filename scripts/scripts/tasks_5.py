@@ -33,7 +33,7 @@ class Exercises(BaseExercises):
         self.ex("SELECT e.emp_id, e.fname, e.lname "
                 "FROM employee e INNER JOIN employee s"
                 "    ON e.superior_emp_id = s.emp_id "
-                "WHERE e.assigned_branch_id != s.assigned_branch_id;")
+                "WHERE e.dept_id != s.dept_id;")
 
 
 if __name__ == '__main__':

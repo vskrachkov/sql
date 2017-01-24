@@ -40,13 +40,10 @@ class Exercises(BaseExercises):
                 "WHERE open_date BETWEEN '2002-01-01' AND '2002-12-31';")
 
     def task44(self):
-        """Extracts individual customers which have 'a' as the second letter
-        in last name and letter 'e' after 'l' at any position.
-        """
+        """"""
         self.ex("SELECT fname, lname "
                 "FROM individual "
-                "WHERE lname LIKE concat(`\\_`, `a`, `\\%`) AND "
-                "      lname LIKE concat(`\\%`, `le`, `\\%`)")
+                "WHERE lname LIKE `%%a%%`")
 
 
 if __name__ == '__main__':

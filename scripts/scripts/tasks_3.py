@@ -11,14 +11,14 @@ from core.common import BaseExercises
 
 
 class Exercises(BaseExercises):
-
     def task31(self):
         """Extracts from the database id, name and family name of
         all bank employees
         """
         print(' ' * 5, 'emp_id, fname, lname')
         self.ex("SELECT emp_id, fname, lname "
-                "FROM employee;")
+                "FROM employee "
+                "ORDER BY fname, lname;")
 
     def task32(self):
         """Extracts from database account id, customer id and pending balance
