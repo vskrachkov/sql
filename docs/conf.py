@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Learning SQL documentation build configuration file, created by
-# sphinx-quickstart on Tue Jan 24 23:49:06 2017.
+# sphinx-quickstart on Wed Jan 25 00:22:15 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -17,9 +17,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../scripts'))
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- General configuration ------------------------------------------------
@@ -32,7 +32,7 @@ sys.path.insert(0, os.path.abspath('../scripts'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-              'sphinx.ext.githubpages']
+    'sphinx.ext.githubpages']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Learning SQL (Alan Beaulieu)'
+project = 'Learning SQL'
 copyright = '2017, Vyacheslav Krachkov'
 author = 'Vyacheslav Krachkov'
 
